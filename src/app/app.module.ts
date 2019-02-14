@@ -2,14 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { Movies } from './movies/movies.component';
+import { MovieComponent } from './movie/movie.component';
+import { HomeComponent } from './home/home.component';
+import { TrendingComponent } from './trending/trending.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Movies,
+    MovieComponent,
+    HomeComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
